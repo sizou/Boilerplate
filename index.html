@@ -12,26 +12,35 @@
 		<div>
 			<h1><span>Awesome</span> Boilerplate</h1>
 			<p>
-				<label>Jump To Content</label><br>
-				<label>Jump To Footer</label><br>
-				<label>Jump To Kitties</label>
-			</p>
+                <a href="#Content"><label>Jump To Content</label></a><br>
+                <a href="#Kitties"><label>Jump To Kitties</label></a><br>
+                <a href="#Footer"><label>Jump To Footer</label></a><br>
+
+            </p>
 		</div>
 	</header>
 	<main>
+
 		<section>
 			<article>
-			<!--ToDo Input Fields-->	
-		          <input type="text" size="30" maxlength="40" value="Sufjan"/>
+			<!--ToDo Input Fields-->
+                <a name="Content">
+                <p>Name <input type="text"><br></p>
+                <p>Vorname <input type="text"><br></p>
+                <p>Email <input type="text"><br></p>
+                <p>Telefonnummer <input type="text"><br></p>
+                <p>Geburtsdatum <input type="text"><br></p>
 
-                  <input type="text" size="30" maxlength="40" value="unveränderlich" readonly="readonly"/>
-
-                  <input type="password" size="12" maxlength="40"/>
+                <br/>
+                <input type="checkbox" name="fruit" value="UIB" checked="checked"/>UIB<br/>
+                <input type="checkbox" name="fruit" value="IB"/>IB<br/>
+                <input type="checkbox" name="fruit" value="IMB" />IMB<br/>
 
 			</article>
 
 		</section>
 		<section>
+            <a name="Kitties">
 			<article>
 				<figure>
 					<div class="icon icon-learn"></div>
@@ -65,16 +74,18 @@
 					<div class="icon icon-follow"></div>
 				</figure>
 				<h3>Follow Us</h3>
+
 				<p>
 					Falls du fragen hast, kannst du dich jederzeit an 
-					<a href="https://git.com/CodeKittey">@Codekittey</a>, wenden oder eine
+					<a href="https://github.com/CodeKittey">@Codekittey</a>, wenden oder eine
 					Email schreiben: m.kraus@hs-mannheim.de
 				</p>
 			</article>
 		</section>
 	</main>
 	<footer>
-		<img src="img/nodschool.svg"></a>
+        <a name="Footer">
+		<img src="img/nodschool.svg" alt="pic: nodschool"></a>
 	</footer>
 	<script src="design/index.js"></script>
 </body>
